@@ -1,10 +1,6 @@
 import time
 
 
-# A recursive function is said to be tail-recursive if the recursive call is the last thing done in the function
-# before returning. A recursive function is said to be non-tail-recursive if the recursive call is not the last thing
-# done in the function before returning
-
 # -> printing the first n term os fib seq
 def generate_fib_sequence(n: int) -> list[int]:  # n is one indexed
     start = time.time()
