@@ -1,0 +1,25 @@
+Here's my update for my CodeAlpha internship! I finally got time to work on my first
+task after a hectic exam season!
+
+I chose to work on the simpler task for this reason.
+
+I worked on a Fibonacci Generator! Fibonacci sequence is a sequence where each
+number is the sum of the two preceding ones, starting from 0 and 1. I created
+generate_fib_sequence(n) function to generate the first n terms of the sequence
+and return them in a list. This is done in O(n) time. This function would be useful if the program
+requires the sequence to perform a few calculations, so the sequence is generated only once.
+
+However, if a program just needs the nth term there's few approaches. The most straightforward
+way is implemented in the fib1(n) function - recursive implementation. Note it print the (n-1)th term because it uses zero indexing.
+This method is known by all programmers and is probably the implementation done by everyone when they face this task
+in their early programming days, but I found out recently that this approach is VERY slow. Its complexity is
+O(2^n)! Check proof in the final picture.
+
+I found out there's a much faster implementation (in fib2(n) function - iterative approach) that takes O(n) time only!
+The problem with the first implementation is that it calculates the same values needed for 2 different
+terms more than once from the beginning, but the second implementation removes this redundancy by using an iterative approach
+instead of a recursive approach.
+
+We can see that the first approach takes much longer time - while the second takes so little time that it's
+rounded down to 0!
+--MENTIOB CODEALPHA AND DO HASHTAGS--
